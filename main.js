@@ -6,7 +6,9 @@ const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
 const screen2Messege = document.querySelector(".screen2 h2")
 const input = document.querySelector("#inputNumber")
+const inputNumber = document.querySelector("#inputNumber")
 let xAttempts = 1
+
 
 // Eventos
 btnTry.addEventListener('click', handleTryClick)
@@ -25,8 +27,6 @@ input.addEventListener('input', () => {
 // Funções 
 function handleTryClick(event) {
     event.preventDefault() //não faça o padrão do evento
-
-    const inputNumber = document.querySelector("#inputNumber")
 
     if(Number(inputNumber.value) == randomNumber) {
         let article = xAttempts == 1
