@@ -5,16 +5,21 @@ const randomNumber = Math.round(Math.random() * 10)
 const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
 const screen2Messege = document.querySelector(".screen2 h2")
+const input = document.querySelector("#inputNumber")
 let xAttempts = 1
 
 // Eventos
 btnTry.addEventListener('click', handleTryClick)
 btnReset.addEventListener('click', handleResetClick)
-// btnReset.addEventListener('keydown', function(e) {
-//     if(e.key == 'Enter') {
-//         handleResetClick()
-//     }
-// })
+input.addEventListener('input', () => {
+
+    // pega o valor digitado
+    input.value = 
+
+    // remove tudo que não for número
+    input.value.replace(/\D/g, '')
+
+})
 
 
 // Funções 

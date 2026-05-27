@@ -20,6 +20,16 @@ body, button, input {
     font-family: "DM Sans", sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 button {
     background: #7879f1;
     color: #ffffff;
